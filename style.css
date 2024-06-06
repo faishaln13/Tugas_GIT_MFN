@@ -1,0 +1,138 @@
+/* Style untuk elemen header */
+header {
+    background-color: #00215E;
+    color: rgb(255, 253, 253);
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style untuk elemen h1 didalam header */
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/* Style untuk elemen nav didalam header */
+header nav {
+    margin-top: 15px;
+}
+
+/* Style untuk link didalam elemen nav */
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* Style untuk link ketika di hover */
+header nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #ffffff;
+    transition: width 0.3s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFBDA; /* warna latar belakang */      
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 30%;
+    margin: 30px auto;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #00215E;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #ffffff; 
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:#FFF9D0 ; /* warna latar belakang konten */
+    border-radius: 8px; /* sudut bulat pada konten */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* bayangan untuk efek mendalam */
+}
+
+h2 {
+    color: #000000; /* warna teks */
+    font-size: 24px; /* ukuran teks */
+    margin-bottom: 10px; /* jarak antara teks dengan paragraf */
+}
+
+p {
+    color:#000000; /* warna teks paragraf */
+    font-size: 16px; /* ukuran teks paragraf */
+    line-height: 1.5; /* jarak antara baris */
+}
+
+footer {
+    background-color: #00215E; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+    padding: 20px; /* Padding di dalam footer */
+    text-align: center; /* Teks di tengah */
+    font-size: 14px; /* Ukuran teks */
+    border-top: 1px solid #ccc; /*Garis atas footer */
+}
+
+footer p {
+    margin: 0; /* Hapus margin default pada paragraf di dalam footer */
+}
